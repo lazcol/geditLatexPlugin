@@ -1,0 +1,25 @@
+Gedit es un editor de texto básico, pero viene equipado con aproximadamente 12 complementos estándar y otros 9 fácilmente disponibles. Además de esto, hay una variedad de complementos de "terceros" desarrollados para realizar varias tareas específicas, como ayudarlo al escribir y exportar documentos LaTeX!.
+
+Primero, obtenga todos los complementos básicos:
+
+    ``sudo apt-get install gedit-plugins*``
+
+y habilítelos en gedit yendo a Edición->Preferencias->Complementos y marcando los que desee.
+
+En segundo lugar, asegúrese de tener todas las dependencias necesarias para el complemento:
+    1. El complemento está escrito en Python 2.4 y se basa en PyGTK 2.4:
+        ``sudo apt-get install python-gtk2``
+    2. Asegúrese de tener rubber instalado. Es usado para la compilación automática de documentos:
+        ``sudo apt-get install rubber 3``
+    3. Para utilizar la búsqueda inversa DVI, necesita Python bindings para D-BUS:
+        ``sudo apt-get install python-dbus``
+
+En tercer lugar, descargue la última versión del complemento ATX desde aquí,
+    ``https://wiki.gnome.org/Apps/Gedit/LaTeXPlugin/Download``
+y extraiga y copie la carpeta contenida y un archivo en ``~/.gnome2/gedit/plugins``. Puede que tenga que crear gedit/plugins si aún no ha instalado ningún otro plugin.
+
+Después de eso, reinicie gedit y active el complemento en el cuadro de diálogo de configuración como lo hicimos con los otros complementos.
+
+Ahora tiene un editor con todo tipo de funciones útiles, que incluyen revisión ortográfica en línea, finalización de código, etiqueta, símbolos, inserción de caracteres, un navegador de archivos y documentos, y un terminal integrado, así como herramientas para crear automáticamente nuevos Archivos LaTeX, insertar gráficos, tablas y matrices, y un diálogo fantástico para insertar automáticamente entradas BibTeX. También si es un usuario de R que crea informes, etc., puede usar Sweave directamente desde gedit para incrustar el código R en su Documentos LaTeX.
+
+Todo esto en un editor de texto ligero, ¡Genial!
