@@ -1,0 +1,25 @@
+REQUIREMENTS
+
+ - gedit >=2.15.2
+ - Python >=2.6
+ - PyGTK >=2.12
+ - GTK+ >=2.10.14
+ - PyEnchant (optional, needed for LaTeX spell checking)
+ - Poppler Python Bindings (optional, needed for embedded PDF preview)
+
+INSTALLATION
+
+Just copy the contents of the archive (folder 'GeditLaTeXPlugin' and file 
+'GeditLaTeXPlugin.gedit-plugin') to '~/.gnome2/gedit/plugins' where '~' 
+is your home directory. You may have to create the folder 'plugins'.
+
+Restart gedit and activate the plugin in the plugins configuration.
+
+Tiene que quedar así
+~/.gnome2/gedit/plugins/.
+					│
+					├─ /GeditLaTeXPlugin/
+					└─ GeditLaTeXPlugin.gedit-plugin
+
+A modo de no perder el archivo, lo he dejado adentro del directorio GeditLaTeXPlugin.
+Cuestión que hay que copiarlo para armar el directorio tal cual se encuentra diagramado.
